@@ -1,43 +1,43 @@
 {
-  "name": "cat-st-npm",
+  "name": "cat-st-yarn",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.13",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
+    "@hookform/resolvers": "^2.9.10",
+    "gatsby": "^5.5.0",
+    "gatsby-plugin-image": "^3.5.0",
+    "gatsby-plugin-sass": "^6.5.0",
+    "gatsby-plugin-sharp": "^5.5.0",
+    "gatsby-plugin-sitemap": "^6.5.0",
+    "gatsby-plugin-svgr-loader": "^0.1.0",
+    "gatsby-source-filesystem": "^5.5.0",
+    "gatsby-transformer-sharp": "^5.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0"
+    "react-hook-form": "^7.43.1",
+    "sass": "^1.58.0",
+    "swell-js": "^3.19.8",
+    "yup": "^0.32.11",
+    "zustand": "^4.3.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "@types/classnames": "^2.3.1",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.5"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "jsxSingleQuote": true
   }
 }
