@@ -5,7 +5,8 @@ import { CheckoutPage } from '../domains/checkout/checkout.page';
 import { Layout } from '../domains/layout/layout.component';
 import { productsService } from '../domains/products/products.service';
 
-const PageCheckout: React.FC<PageProps> = () => {
+const PageCheckout: React.FC<PageProps> = (props) => {
+  console.log('props', props);
   return (
     <Layout>
       <CheckoutPage />
@@ -17,8 +18,8 @@ export async function getServerData() {
   const productsData = await productsService.getAll();
 
   return {
-    props: {},
-    // props: { products: productsData.results },
+    // props: {},
+    props: { products: productsData.results },
   };
 }
 
