@@ -7,7 +7,8 @@ import { Product } from 'swell-js';
 import { HomePage } from '../domains/home/home.page';
 import { IPageProps } from '../__common/types';
 
-const IndexPage: React.FC<IPageProps<{ products: Product[] }>> = (props) => {
+// const IndexPage: React.FC<IPageProps<{ products: Product[] }>> = (props) => {
+const IndexPage = () => {
   return (
     <Layout>
       <h1>adadsa</h1>
@@ -16,14 +17,14 @@ const IndexPage: React.FC<IPageProps<{ products: Product[] }>> = (props) => {
   );
 };
 
-export async function getServerData() {
-  // const productsData = await productsService.getAll();
-
-  return {
-    props: {},
-    // props: { products: productsData.results },
-  };
-}
+// export async function getServerData() {
+//   // const productsData = await productsService.getAll();
+//
+//   return {
+//     props: {},
+//     // props: { products: productsData.results },
+//   };
+// }
 
 export default IndexPage;
 
