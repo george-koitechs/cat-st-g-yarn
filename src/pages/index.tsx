@@ -13,7 +13,7 @@ const IndexPage: React.FC<IPageProps<{ data: any }>> = (props) => {
   return (
     <Layout>
       <h1>{props.serverData.data?.title}</h1>
-      <h1>asdasd</h1>
+      <h1>client</h1>
       {/*<HomePage products={props.serverData.products} />*/}
     </Layout>
   );
