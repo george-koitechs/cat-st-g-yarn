@@ -17,7 +17,7 @@ const IndexPage: React.FC<IPageProps<{ products: Product[] }>> = (props) => {
 };
 
 export async function getServerData() {
-  const productsData = await productsService.getAll();
+  // const productsData = await productsService.getAll();
 
   return {
     props: {},
