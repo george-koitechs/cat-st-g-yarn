@@ -13,7 +13,7 @@ export const CheckoutPage = (props: any) => {
           <img src='/images/catstreet-logo.svg' alt='Cat st.' />
         </Link>
         <h1>sadasd</h1>
-        <h1>{props.serverData.products?.[0]?.name}</h1>
+        {/*<h1>{props.serverData.products?.[0]?.name}</h1>*/}
         <h1 className='checkoutPage__title'>Checkout</h1>
         <Checkout />
       </div>
