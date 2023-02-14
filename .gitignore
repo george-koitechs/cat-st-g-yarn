@@ -6,7 +6,7 @@
 .pnp.js
 .cache/
 public
-src/gatsby-types.d.ts
+gatsby-types.d.ts
 .idea
 
 
