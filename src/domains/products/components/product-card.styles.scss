@@ -1,0 +1,33 @@
+@use '../../../__common/assets/styles/variables' as *;
+
+.productCard {
+  border: 1px solid #000;
+  padding: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.productCard__image {
+  margin: 0 auto 10px;
+  height: 220px;
+  object-fit: contain;
+}
+.productCard__name {
+  font-size: 20px;
+}
+.productCard__options {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.productCard__actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+.productCard__btn {
+  padding: 10px 0;
+  cursor: pointer;
+  flex-grow: 1;
+}
