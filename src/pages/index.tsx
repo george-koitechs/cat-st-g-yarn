@@ -15,13 +15,14 @@ const IndexPage: React.FC<IPageProps<{ products: Product[] }>> = (props) => {
   );
 };
 
-// export async function getServerData() {
-//   const productsData = await productsService.getAll();
-//
-//   return {
-//     props: { products: productsData.results },
-//   };
-// }
+export async function getServerData() {
+  const productsData = await productsService.getAll();
+
+  return {
+    props: {},
+    // props: { products: productsData.results },
+  };
+}
 
 export default IndexPage;
 

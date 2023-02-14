@@ -16,13 +16,14 @@ const ProductPage: React.FC<IPageProps<{ product: Product }>> = (props) => {
   );
 };
 
-// export async function getServerData(context: { params: Record<string, any> }) {
-//   const product = await productsService.getOne(context.params.id);
-//
-//   return {
-//     props: { product },
-//   };
-// }
+export async function getServerData(context: { params: Record<string, any> }) {
+  const product = await productsService.getOne(context.params.id);
+
+  return {
+    props: {},
+    // props: { product },
+  };
+}
 
 export default ProductPage;
 
