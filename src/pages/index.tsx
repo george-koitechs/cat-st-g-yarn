@@ -10,7 +10,8 @@ import { IPageProps } from '../__common/types';
 const IndexPage: React.FC<IPageProps<{ products: Product[] }>> = (props) => {
   return (
     <Layout>
-      <HomePage products={props.serverData.products} />
+      <h1>adadsa</h1>
+      {/*<HomePage products={props.serverData.products} />*/}
     </Layout>
   );
 };
@@ -19,7 +20,8 @@ export async function getServerData() {
   const productsData = await productsService.getAll();
 
   return {
-    props: { products: productsData.results },
+    props: {},
+    // props: { products: productsData.results },
   };
 }
 
