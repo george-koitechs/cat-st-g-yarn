@@ -13,14 +13,14 @@ const PageCheckout: React.FC<PageProps> = (props) => {
   );
 };
 
-export async function getServerData() {
-  const productsData = await productsService.getAll();
-
-  return {
-    // props: {},
-    props: { products: productsData.results },
-  };
-}
+// export async function getServerData() {
+//   const productsData = await productsService.getAll();
+//
+//   return {
+//     // props: {},
+//     props: { products: productsData.results },
+//   };
+// }
 
 export default PageCheckout;
 
