@@ -7,10 +7,16 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "fullServe": "yarn clean && yarn build && yarn serve",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
+    "@radix-ui/colors": "^0.1.8",
+    "@radix-ui/react-icons": "^1.1.1",
+    "@radix-ui/react-select": "^1.2.0",
+    "@radix-ui/react-toggle": "^1.0.1",
+    "classnames": "^2.3.2",
     "gatsby": "^5.5.0",
     "gatsby-plugin-image": "^3.5.0",
     "gatsby-plugin-sass": "^6.5.0",
@@ -22,7 +28,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.1",
-    "sass": "^1.58.0",
+    "sass": "^1.58.1",
     "swell-js": "^3.19.8",
     "yup": "^0.32.11",
     "zustand": "^4.3.2"

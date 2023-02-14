@@ -1,0 +1,29 @@
+@use '../../../__common/assets/styles/variables' as *;
+
+.productItem {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 50px 0;
+}
+.productItem__name {
+  text-align: center;
+}
+.productItem__images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
+  gap: 20px;
+  border-right: 1px solid #ccc;
+}
+.productItem__content {
+  display: grid;
+  gap: 20px;
+}
+.productItem__option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.productItem__optionName {
+  font-weight: 700;
+}
