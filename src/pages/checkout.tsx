@@ -6,10 +6,9 @@ import { Layout } from '../domains/layout/layout.component';
 import { productsService } from '../domains/products/products.service';
 
 const PageCheckout: React.FC<PageProps> = (props) => {
-  console.log('props', props);
   return (
     <Layout>
-      <CheckoutPage />
+      <CheckoutPage {...props} />
     </Layout>
   );
 };
